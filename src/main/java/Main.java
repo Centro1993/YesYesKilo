@@ -1,5 +1,3 @@
-package sample;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,14 +8,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
-        Parent root = (Parent)loader.load();
-        Controller controller = (Controller)loader.getController();
-        controller.load();
-
-        primaryStage.setTitle("Nonogram Solver");
-        primaryStage.setScene(new Scene(root, 1000, 1000));
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene frame = new Scene(root);
+        primaryStage.isResizable();
+        primaryStage.setTitle("YesYesKilo");
+        primaryStage.setScene(frame);
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
 

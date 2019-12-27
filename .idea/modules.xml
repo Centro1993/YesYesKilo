@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NonogramSolver.iml" filepath="$PROJECT_DIR$/NonogramSolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yesyeskilo.iml" filepath="$PROJECT_DIR$/yesyeskilo.iml" />
     </modules>
   </component>
 </project>
