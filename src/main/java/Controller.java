@@ -1,28 +1,26 @@
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.RowConstraints;
+import javafx.scene.text.Text;
+import org.tbee.javafx.scene.layout.MigPane;
 
 public class Controller {
-    public GridPane grid = null;
+    private static int nonogramGridSize = 20;
 
-    private int cols = 15;
-    private int rows = 15;
+    /* PANES */
+    public MigPane mainPanel = null;
+
+    private MigPane horizontalNumberPane = new MigPane();
+    private MigPane verticalNumberPane = new MigPane();
 
     void load() {
-        grid.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white;");
-        this.setGridSize(this.cols, this.rows);
-    }
+        mainPanel.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white;");
 
-    void setGridSize(int cols, int rows) {
-        // clear gridpane
-        grid.getColumnConstraints().removeAll();
-        grid.getRowConstraints().removeAll();
+        for (int i = 0; i < nonogramGridSize; i++) {
+            Text number = new Text(10, 20, String.valueOf(i));
 
-        for(int col = 0; col < cols; col++) {
-            grid.getColumnConstraints().add(new ColumnConstraints(50));
+            horizontalNumberPane.add(number, "width 10:20:40");
+            verticalNumberPane.add(number, "width 10:20:40");
         }
-        for(int row = 0; row < rows; row++) {
-            grid.getRowConstraints().add(new RowConstraints(50));
-        }
+
+        mainPanel.add(horizontalNumberPane, "dock north");
+        mainPanel.add(verticalNumberPane, "dock west");
     }
 }
