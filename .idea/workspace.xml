@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f4cb04c-f5fe-4875-81b6-a9714759aab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yesyeskilo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yesyeskilo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +109,9 @@
       <workItem from="1577138503796" duration="10148000" />
       <workItem from="1577380319668" duration="1204000" />
       <workItem from="1577381898358" duration="675000" />
-      <workItem from="1577486569060" duration="9694000" />
+      <workItem from="1577486569060" duration="9792000" />
+      <workItem from="1578404348039" duration="65000" />
+      <workItem from="1579633939079" duration="2547000" />
     </task>
     <servers />
   </component>
@@ -132,26 +131,26 @@
       <screen x="0" y="24" width="1600" height="834" />
     </state>
     <state x="933" y="190" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1600.834@0.24.1600.834" timestamp="1577150883833" />
-    <state x="579" y="199" key="FileChooserDialogImpl" timestamp="1577021037978">
+    <state x="579" y="199" key="FileChooserDialogImpl" timestamp="1578404395381">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state x="579" y="199" key="FileChooserDialogImpl/0.24.1600.834@0.24.1600.834" timestamp="1577021037978" />
-    <state width="1552" height="285" key="GridCell.Tab.0.bottom" timestamp="1577498082561">
+    <state x="579" y="199" key="FileChooserDialogImpl/0.24.1600.834@0.24.1600.834" timestamp="1578404395381" />
+    <state width="1552" height="285" key="GridCell.Tab.0.bottom" timestamp="1579636509810">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state width="1552" height="285" key="GridCell.Tab.0.bottom/0.24.1600.834@0.24.1600.834" timestamp="1577498082561" />
-    <state width="1552" height="285" key="GridCell.Tab.0.center" timestamp="1577498082560">
+    <state width="1552" height="285" key="GridCell.Tab.0.bottom/0.24.1600.834@0.24.1600.834" timestamp="1579636509810" />
+    <state width="1552" height="285" key="GridCell.Tab.0.center" timestamp="1579636509808">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state width="1552" height="285" key="GridCell.Tab.0.center/0.24.1600.834@0.24.1600.834" timestamp="1577498082560" />
-    <state width="1552" height="285" key="GridCell.Tab.0.left" timestamp="1577498082559">
+    <state width="1552" height="285" key="GridCell.Tab.0.center/0.24.1600.834@0.24.1600.834" timestamp="1579636509808" />
+    <state width="1552" height="285" key="GridCell.Tab.0.left" timestamp="1579636509808">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state width="1552" height="285" key="GridCell.Tab.0.left/0.24.1600.834@0.24.1600.834" timestamp="1577498082559" />
-    <state width="1552" height="285" key="GridCell.Tab.0.right" timestamp="1577498082560">
+    <state width="1552" height="285" key="GridCell.Tab.0.left/0.24.1600.834@0.24.1600.834" timestamp="1579636509808" />
+    <state width="1552" height="285" key="GridCell.Tab.0.right" timestamp="1579636509809">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state width="1552" height="285" key="GridCell.Tab.0.right/0.24.1600.834@0.24.1600.834" timestamp="1577498082560" />
+    <state width="1552" height="285" key="GridCell.Tab.0.right/0.24.1600.834@0.24.1600.834" timestamp="1579636509809" />
     <state x="274" y="76" width="1052" height="737" key="SettingsEditor" timestamp="1577487174695">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
@@ -160,18 +159,18 @@
       <screen x="0" y="24" width="1600" height="834" />
     </state>
     <state x="529" y="171" width="540" height="524" key="StructurePopup/0.24.1600.834@0.24.1600.834" timestamp="1577496323448" />
-    <state x="436" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1577486568578">
+    <state x="436" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1579633947847">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state x="436" y="268" key="com.intellij.ide.util.TipDialog/0.24.1600.834@0.24.1600.834" timestamp="1577486568578" />
+    <state x="436" y="268" key="com.intellij.ide.util.TipDialog/0.24.1600.834@0.24.1600.834" timestamp="1579633947847" />
     <state x="542" y="361" width="515" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575419998215">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
     <state x="542" y="361" width="515" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1600.834@0.24.1600.834" timestamp="1575419998215" />
-    <state x="34" y="145" width="1523" height="599" key="new project wizard" timestamp="1577021039790">
+    <state x="34" y="145" width="1523" height="599" key="new project wizard" timestamp="1578404411363">
       <screen x="0" y="24" width="1600" height="834" />
     </state>
-    <state x="34" y="145" width="1523" height="599" key="new project wizard/0.24.1600.834@0.24.1600.834" timestamp="1577021039790" />
+    <state x="34" y="145" width="1523" height="599" key="new project wizard/0.24.1600.834@0.24.1600.834" timestamp="1578404411363" />
     <state x="464" y="196" key="run.anything.popup" timestamp="1575420005989">
       <screen x="0" y="24" width="1600" height="834" />
     </state>

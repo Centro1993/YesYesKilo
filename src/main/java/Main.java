@@ -1,6 +1,8 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.tbee.javafx.scene.layout.MigPane;
@@ -18,40 +20,47 @@ public class Main extends Application {
         primaryStage.isResizable();
         primaryStage.setTitle("YesYesKilo");
 
-        // Directive-Panes
-        MigPane horizontalNumberPane = new MigPane();
-        for ( int h = 1; h <= MAX_DIRECTIVES_COUNT; h++) {
-            horizontalNumberPane.add(new Text(), "width 10:20:40");     // Placeholder for upper-left corner
-        }
-        MigPane verticalNumberPane = new MigPane("wrap 1");
+        // Menu
+        MenuBar menuBar = new MenuBar();
 
-        for (int i = 1; i <= NONOGRAM_GRID_SIZE; i++) {
-            MigPane directiveColumn = new MigPane("wrap 1");
-            MigPane directiveRow = new MigPane();
+        // --- Menu File
+        Menu menuFile = new Menu("File");
 
-            for ( int h = 1; h <= MAX_DIRECTIVES_COUNT; h++) {
-                Text numberHori = new Text(10, 20, String.valueOf(h));
-                Text numberVert = new Text(10, 20, String.valueOf(h));
+        // --- Menu Edit
+        Menu menuEdit = new Menu("Edit");
 
-                directiveColumn.add(numberHori, "width 10:20:40");
-                directiveRow.add(numberVert, "height 10:18:40");
-            }
+        // --- Menu View
+        Menu menuView = new Menu("View");
 
-            horizontalNumberPane.add(directiveColumn, "width 10:20:40");
-            verticalNumberPane.add(directiveRow, "height 10:18:40");
-        }
+        menuBar.getMenus().addAll(menuFile, menuEdit, menuView);
 
-        root.add(horizontalNumberPane, "dock north");
-        root.add(verticalNumberPane, "dock west");
+        root.add(menuBar, "dock north");
 
-        // Checkbox-Grid
-        MigPane checkboxGrid = new MigPane("wrap " + NONOGRAM_GRID_SIZE);
-        root.add(checkboxGrid);
+        // Nonogram-Grid
+        MigPane nonogramGrid = new MigPane("wrap " + (NONOGRAM_GRID_SIZE + MAX_DIRECTIVES_COUNT));
+        root.add(nonogramGrid);
 
-        for (int x = 0; x < NONOGRAM_GRID_SIZE; x++) {
-            for (int y = 0; y < NONOGRAM_GRID_SIZE; y++) {
-                CheckBox box = new CheckBox();
-                checkboxGrid.add(box, "width 10:20:40");
+        for (int x = 0; x < NONOGRAM_GRID_SIZE + MAX_DIRECTIVES_COUNT; x++) {
+            for (int y = 0; y < NONOGRAM_GRID_SIZE + MAX_DIRECTIVES_COUNT; y++) {
+                // add placeholders in the top left corner
+                if(x < MAX_DIRECTIVES_COUNT && y < MAX_DIRECTIVES_COUNT) {
+                    nonogramGrid.add(new Text(), "width 10:20:40");
+                }
+                // add directives if above the checkboxes
+                else if(x >= MAX_DIRECTIVES_COUNT && y < MAX_DIRECTIVES_COUNT) {
+                    Text directiveHorizontal = new Text(10, 20, String.valueOf(y));
+                    nonogramGrid.add(directiveHorizontal, "width 10:20:40");
+                }
+                // add directives to the left of the checkboxes
+                else if(x < MAX_DIRECTIVES_COUNT && y >= MAX_DIRECTIVES_COUNT) {
+                    Text directiveVertical = new Text(10, 20, String.valueOf(x));
+                    nonogramGrid.add(directiveVertical, "width 10:20:40");
+                }
+                // add checkboxes in the grid area
+                else {
+                    CheckBox box = new CheckBox();
+                    nonogramGrid.add(box, "width 10:20:40");
+                }
             }
         }
 
